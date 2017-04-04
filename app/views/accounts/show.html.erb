@@ -21,3 +21,5 @@
 
 <%= link_to 'Éditer', edit_account_path(@account), class: 'btn-action' %>
 <%= link_to 'Retour à la liste', accounts_path, class: 'btn-action' %>
+
+<%= render 'application/incomes_expenses_details', model: @account, default_sort_order: 1 %>
